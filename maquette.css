@@ -1,0 +1,47 @@
+@font-face{
+    font-family: "Raleway";
+    src: url(police/static/Raleway-Black.ttf);
+    src: url(police/static/Raleway-BlackItalic.ttf);
+    src: url(police/static/Raleway-Bold.ttf);
+    src: url(police/static/Raleway-BoldItalic.ttf);
+    src: url(police/static/Raleway-ExtraBold.ttf);
+    src: url(police/static/Raleway-ExtraBoldItalic.ttf);
+    src: url(police/static/Raleway-ExtraLight.ttf);
+    src: url(police/static/Raleway-ExtraLightItalic.ttf);
+    src: url(police/static/Raleway-Italic.ttf);
+    src: url(police/static/Raleway-Light.ttf);
+    src: url(police/static/Raleway-LightItalic.ttf);
+    src: url(police/static/Raleway-Medium.ttf);
+    src: url(police/static/Raleway-MediumItalic.ttf);
+    src: url(police/static/Raleway-Regular.ttf);
+    src: url(police/static/Raleway-SemiBold.ttf);
+    src: url(police/static/Raleway-SemiBoldItalic.ttf);
+    src: url(police/static/Raleway-Thin.ttf);
+    src: url(police/static/Raleway-ThinItalic.ttf);
+}
+body
+{
+    font-family: "Raleway", sans-serif;
+
+}
+
+/*header*/
+nav 
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+nav div
+{
+    margin-right: 16px;
+}
+nav li
+{
+    margin: 0 20px 0 20px;
+}
