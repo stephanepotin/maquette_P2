@@ -9,7 +9,7 @@
     </head>
 
     <body>   
-    <!-- header -->
+        <!-- header -->
         <header>
             <div class="header">
                 <div class="logo">
@@ -28,32 +28,49 @@
                 </nav>
             </div>
         </header>
-    <!-- main -->
+         <!-- main -->
         <main> 
-            <section id="banniere">
+            <!--section1-->
+            <section class="banniere">
                 <h1>Trouver un hébergement pour des vancances de rêves</h1>
-                <h4>En plein centre ville ou en pleine nature</h4>
-                    <div id="recherche">
-                        <i class="fas fa-map-marker"></i>
-                        <input type="rechercher">
-                        <p>Rechercher</p>
-                    </div>  
-                <div id="filtres">
-                    <h3>filtres</h3>
-                        <i class="fas fa-money-bill-wave"></i>
-                            <div class="Economique">Economique</div>
-                        <i class="fas fa-child"></i>
-                            <div class="Famillial">Famillial</div>
-                        <i class="fas fa-heart"></i>
-                            <div class="Romantique">Romantique</div>
-                        <i class="fas fa-dog"></i>
-                            <div class="Animaux acceptés">Animaux acceptés</div>
-                </div> 
-                <div id="info">
+                <p>En plein centre ville ou en pleine nature</p>
+                <div class="recherche">
+                    <form class="recherche" action="/mon-action.php">
+                        <button type="none"><i class="fas fa-map-marker-alt"></i></button>
+                        <input type="text" name="recherche">
+                        <button class="btnrecherche" type="submit">
+                            <p class="textbtn">Rechercher</p>
+                            <p class="textbtn2"><i class="fas fa-search"></i></p>
+                        </button>
+                    </form>
+                </div>
+                <div class="filtres">
+                    <b class="titre">Filtres</b>
+                    <div class="list">
+                        <div class="bouton">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <p>Economique</p>
+                        </div>
+                        <div class="bouton">
+                            <i class="fas fa-child"></i>
+                            <p>Famillial</p>
+                        </div>
+                        <div class="bouton">
+                            <i class="fas fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="bouton">
+                            <i class="fas fa-dog"></i>
+                            <p>Animaux acceptés</p>
+                        </div>
+                    </div> 
+                <div class="info">
+                    <p><i class="fas fa-info"></i>
                     <p>Plus de 500 logements disponible dans cette ville</p>
                 </div>
             </section>
-            <section id="container">              
+            <!--section2-->
+            <section id="hotel">              
                 <div id="A">
                     <h2>Hébérgement à Marseille</h2>
                     <div id="hebergement">
@@ -105,6 +122,7 @@
                     </div>
             </section>   
         </main>
+        <!--footer-->
         <footer>
             <div class="footer-items">
                 <h4>A propos</h4>
