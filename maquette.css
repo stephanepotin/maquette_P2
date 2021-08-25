@@ -138,45 +138,70 @@ form.recherche button[type="submit"] {
     left: -2px;
     border-radius: 100%;
 }
-p.info
-{
-    margin: auto;
-    padding left: 6px;
-}
-
 .bouton p {
     margin: auto;
 }
+.info
+{
+    padding: 5px 0;
+    display: inline-flex;
+}
+.info i
+{
+    border: 2px solid #F2F2F2;
+    width: 29px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #0065FC;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 5px;
+    height: 29px;
+}
+p.logement
+{
+    margin: auto;
+    padding-left: 6px;
+}
 /*section 2*/
-#hotel
+.hotel
 {
     display:flex;   
     width:90%;
     margin: auto;   
     justify-content: space-between;
 }
-#hotel div
+.centre
 {
     background-color: #f2f2f2; 
     border-radius: 2%;    
     min-height: 200px;
     margin: 2%;
 }
-#A{    flex:3; }
-#B{    flex:1;}
+.hebergement .box
+{ 
+   flex:3; 
+}
+.lespluspopulaires .box
+{    
+    flex:1;
+}
+.centre
+{
+    display: flex;
+    width: 90%;
 
-#hebergement{
-    display:flex;
-    flex-wrap: wrap;   
-   
 }
 
-#hebergement .Box{
-    width:28%;
-       
-   
+
+img {
+        display: block;
+        max-width:230px;
+        max-height:95px;
+        width: auto;
+        height: auto;
 }
-/*section 2*/
+  /*section 3*/
 #Activity 
 {	
     width: 90%;
@@ -227,7 +252,8 @@ p.info
 	grid-row-start: 7;
 	grid-row-end: 11;	
     grid-column-start: 2;
-	grid-column-end: 3;	
+	grid-column-end: 3;
+	
 }
 
 #Activity .Box:nth-child(4) 
