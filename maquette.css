@@ -141,6 +141,7 @@ form.recherche button[type="submit"] {
 .bouton p {
     margin: auto;
 }
+
 .info
 {
     padding: 5px 0;
@@ -173,16 +174,30 @@ p.logement
 }
 .centre
 {
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2; 
     border-radius: 2%;    
     min-height: 200px;
     margin: 2%;
 }
-.hebergement .box
+.containhebergement
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.containhebergement .Box
+{
+    width: 27%;
+    height: 400px;
+
+}
+.hotel .centre
 { 
    flex:3; 
 }
-.lespluspopulaires .box
+.hotel .populaires
 {    
     flex:1;
 }
