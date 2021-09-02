@@ -27,26 +27,31 @@ body
 /*header*/
 main
 {
+    margin
     width: 90%;
 }
-
-#header
+#header .contener
 {
     display:flex;
     justify-content: space-between;
-    width: 90%; 
+    width: 90%;
+    margin: auto; 
+    margin-top: 2%;
+}
+.logo
+{
+    margin-top: 
 }
 .contener
 {
     display: flex;
+
 }
-.logo
-{
-    margin-left: 2rem;
-}
+
 .menu
 {
     display: flex;
+
     
 }
 a
@@ -57,12 +62,15 @@ a
 nav ul
 {
     display: flex
+    
+    
 }
 nav li
 {
     display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin: 0 5px 0 5px;
+    margin: 0 30px 0 30px;
 }
 
 .hebergements 
@@ -77,7 +85,6 @@ nav li
 .activitess
 {
     text-align: center;
-    border-bottom: 3px solid #99999960;
     min-width: 50%;
     margin: auto 0;
 }
@@ -86,7 +93,6 @@ nav li
     display: flex;
     font-weight: bolder;
     color: #0065FC;
-    
 }
 
 /*main*/
@@ -97,6 +103,10 @@ nav li
     width: 90%;
     margin: auto;
     flex-direction: column;
+}
+.banniere h1
+{
+   margin-bottom: 0px;
 }
 .recherche
 {
@@ -208,6 +218,8 @@ form.recherche button[type="submit"] {
 /*section 2*/
 #hotel
 {
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 
