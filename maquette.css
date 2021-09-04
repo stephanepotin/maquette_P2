@@ -1,28 +1,28 @@
-@font-face
+/* @font-face
 {
     font-family: "Raleway";
-    src: url(../police/static/Raleway-Black.ttf);
+    src: url(./police/static/Raleway-Black.ttf);
     src:url(../police/static/Raleway-BlackItalic.ttf);
-    src: url(../police/static/Raleway-Bold.ttf);
-    src: url(../police/static/Raleway-BoldItalic.ttf);
-    src: url(../police/static/Raleway-ExtraBold.ttf);
-    src: url(../police/static/Raleway-ExtraBoldItalic.ttf);
-    src: url(../police/static/Raleway-ExtraLight.ttf);
-    src: url(../police/static/Raleway-ExtraLightItalic.ttf);
-    src: url(../police/static/Raleway-Italic.ttf);
-    src: url(../police/static/Raleway-Light.ttf);
-    src: url(../police/static/Raleway-LightItalic.ttf);
-    src: url(../police/static/Raleway-Medium.ttf);
-    src: url(../police/static/Raleway-MediumItalic.ttf);
+    src: url(./police/static/Raleway-Bold.ttf);
+    src: url(./police/static/Raleway-BoldItalic.ttf);
+    src: url(./police/static/Raleway-ExtraBold.ttf);
+    src: url(./police/static/Raleway-ExtraBoldItalic.ttf);
+    src: url(./police/static/Raleway-ExtraLight.ttf);
+    src: url(./police/static/Raleway-ExtraLightItalic.ttf);
+    src: url(./police/static/Raleway-Italic.ttf);
+    src: url(./police/static/Raleway-Light.ttf);
+    src: url(./police/static/Raleway-LightItalic.ttf);
+    src: url(./police/static/Raleway-Medium.ttf);
+    src: url(./police/static/Raleway-MediumItalic.ttf);
     src: url(../police/static/Raleway-Regular.ttf);
     src: url(../police/static/Raleway-SemiBold.ttf);
-    src: url(../police/static/Raleway-SemiBoldItalic.ttf);
-    src: url(../police/static/Raleway-Thin.ttf);
-    src: url(../police/static/Raleway-ThinItalic.ttf);
-}
+    src: url(./police/static/Raleway-SemiBoldItalic.ttf);
+    src: url(./police/static/Raleway-Thin.ttf);
+    src: url(./police/static/Raleway-ThinItalic.ttf);
+} */
 body
 {
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 /*header*/
 main
@@ -217,10 +217,12 @@ form.recherche button[type="submit"] {
 /*section 2*/
 #hotel
 {
-    width: 90%;
+    width: 96%;
     margin: auto; 
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    min-height:700px;
 }
 .centre
 {
@@ -229,31 +231,55 @@ form.recherche button[type="submit"] {
     flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 2%;
+    flex: 65%;
+    justify-content: space-between;
+    padding:10px;
+    margin-right: 20px;
+    height: 650px;
 }
 .containhebergement
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
 .containhebergement .Box
 {
     display: flex;
-    flex-wrap: wrap;
-    flex: 30%;
-    background-color: red;
-    border-radius: 10%;
-    width: 17%;
-    height: 42%;  
+    flex-wrap: wrap;    
+    background-color: white;
+    padding:2px;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;  
 }
-.stonk
-{
-    margin: 6%;
-    font-size: 25px;
+figure{
+    margin:0;
 }
 .containpop
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    flex: 35%;
+    background: #F2F2F2;
+    border-radius: 2%;
+    margin-left: 20px;
+    height: 650px;
+}
+
+.Titre_populaires{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+.figBox{
+    display: flex;
+    background: white;
+    border-radius: 2%;
 }
 .populaires
 {
@@ -262,36 +288,36 @@ form.recherche button[type="submit"] {
     background-color: #F2F2F2;
     border-radius: 2%;
 }
-.populaires .box
+/* .populaires .box
 {
     background-color:chartreuse;
     border-radius: 10%;
     margin: 2% 1% 2% 1%;
     margin: auto;
-}
+} */
 .imgheberg
 {
     object-fit: cover;
     width: 100%;
-    height: 200px;
+    height: 55%;
     border-radius: 0.8em 0.8em 0em 0em;
 
 }
 .imgpop
 {
     object-fit: cover;
-    width: 100%;
-    height: 200px;
-    border-radius: 0.8em 0.8em 0em 0em;
+    width: 50%;
+    height: 100%;
+    border-radius: 0.8em 0em 0em 0.8em;
 }
-#hotel .centre
+/* #hotel .centre
 {
-    flex: 65%;
+    
 }
 #hotel .containpop
 {
     flex: 35%;
-}
+} */
 .colorstar
 {
     color: #0065FC;
@@ -304,7 +330,7 @@ form.recherche button[type="submit"] {
   /*section 3*/
 #Activity 
 {	
-    width: 90%;
+    width: 96%;
     margin: auto;
 }
 
@@ -315,7 +341,7 @@ form.recherche button[type="submit"] {
 	grid-template-columns: 24% 24% 24% 24%;
 	grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
     grid-column-gap: 1em;
-	min-height: 600px;	
+	height: 700px;	
 }
 
 #Activity .Box 
@@ -340,7 +366,7 @@ form.recherche button[type="submit"] {
 {
     object-fit: cover;
     width: 100%;
-    height: 90%;
+    height: 85%;
     border-radius: 0.8em 0.8em 0em 0em;
 }
 .imgpom
@@ -354,14 +380,14 @@ form.recherche button[type="submit"] {
 {
     object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 60%;
     border-radius: 0.8em 0.8em 0em 0em;
 }
 .imggard
 {
     object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 68.5%;
     border-radius: 0.8em 0.8em 0em 0em;
 }
 .imglong
@@ -382,7 +408,7 @@ form.recherche button[type="submit"] {
 
 #Activity .Box:nth-child(3) 
 {
-	grid-row-start: 7;
+	grid-row-start: 6;
 	grid-row-end: 11;	
     grid-column-start: 2;
 	grid-column-end: 3;
@@ -408,7 +434,7 @@ form.recherche button[type="submit"] {
 }
 #Activity .Box:nth-child(6)  
  {
-	grid-row-start: 6;
+	grid-row-start: 5;
 	grid-row-end: 11;
 	grid-column-start: 4;
 	grid-column-end: 5;	
