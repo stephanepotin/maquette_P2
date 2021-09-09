@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,76 +8,83 @@
         <script src="https://kit.fontawesome.com/678b6b2a6c.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
-
     <body>   
         <!-- header -->
-        <header id="header">
             <nav class="sizenav">
                 <div class="menunav">
-                    <div class="logo">
+                    <div>
                         <img
-                         src="./images/logo/Reservia.svg"
-                         alt="logo"
-                         width="120px"
-                         height="50px"
-                         >
+                            class="logo"
+                            src="./images/logo/Reservia@3x.png"
+                            alt="logo"
+                            width="120px"
+                            height="50px"
+                        >
                     </div>
                     <div class="contener">
-                        <div class="menu-heberge">
-                        <a href="#">Hebergements</a>
-                        </div>
-                        <div class="menu-acti">
-                            <a href="#">Activités</a>
+                            <div class="menu-heberge">
+                                <a class="policemenu" 
+                                    href="#hebergements">Hebergements</a>
+                            </div>
+                            <div class="menu-heberge">
+                                <a class="policemenu" 
+                                    href="#activités">Activités</a>
                         </div>
                     </div>    
                     <div class="menu-inscript">
-                            <a href="#">S'inscrire</a>
-                    
+                            <a class="policemenuinscript"  
+                                href="#">S'inscrire</a>
+                    </div>
                 </div>
             </nav>
-        </header>
-         <!-- main -->
-        <main id="main "> 
-            <!--section1-->
-            <section class="banniere">
-                <h1>Trouver un hébergement pour des vancances de rêves</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <div class="recherche">
-                    <form class="recherche" action="/mon-action.php">
-                        <button type="none"><i class="fas fa-map-marker-alt"></i></button>
-                        <input type="text" name="recherche">
-                        <button class="btnrecherche" type="submit">
-                            <p class="textbtn">Rechercher</p>
-                            <p class="textbtn2"></p>
-                        </button>
-                    </form>
-                </div> 
+            <header>
+                <section>
+                    <div> 
+                        <h1 class="titreheaderh1">
+                            Trouver un hébergement pour des vancances de rêves
+                        </h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <div class="barrerecherche">
+                        <div class="rechercheicone">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <input 
+                            class="recherche"
+                            type="search"
+                            value="Marseille, France"
+                            />
+                        </div>
+                        <div class="policerechercher">Rechercher</div>
+                    </div> 
                 <div class="filtres">
                     <b class="titre">Filtres</b>
                     <div class="list">
                         <div class="bouton">
-                            <i class="fas fa-money-bill-wave"></i>
+                            <i class="fas fa-money-bill-wave fa-lg"></i>
                             <p>Economique</p>
                         </div>
                         <div class="bouton">
-                            <i class="fas fa-child"></i>
+                            <i class="fas fa-child fa-lg"></i>
                             <p>Famillial</p>
                         </div>
                         <div class="bouton">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart fa-lg"></i>
                             <p>Romantique</p>
                         </div>
                         <div class="bouton">
-                            <i class="fas fa-dog"></i>
+                            <i class="fas fa-dog fa-lg"></i>
                             <p>Animaux acceptés</p>
                         </div>
                     </div> 
                     <div class="info">
-                        <i class="fas fa-info"></i>
+                        <i class="fas fa-info fa-xs"></i>
                         <p class="logement">Plus de 500 logements disponible dans cette ville</p>
                     </div>
                 </div>
-            </section>
+                </section>
+            </header>
             <!--section2-->
             <section id="hotel">              
                 <div class="centre">
