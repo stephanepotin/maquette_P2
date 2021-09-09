@@ -4,10 +4,6 @@ body
 
 }
 /*nav*/
-nav
-{
-margin: 30px;
-}
 .sizenav
 {
     height: auto;
@@ -22,10 +18,7 @@ margin: 30px;
 .logo
 {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+
     margin-bottom: 7px;
 }
 .contener
@@ -82,10 +75,7 @@ margin: 30px;
     cursor: pointer;   
 }
 /*header*/
-#header
-{
-    margin: 30px;
-}
+
 .titreheaderh1
 {
 font-weight: bold;
@@ -227,8 +217,7 @@ font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
+
     margin-bottom: 50px;
     
 }
@@ -395,8 +384,7 @@ font-weight: bold;
 }
 .blocactivites
 {
-    margin-left: 30px;
-    margin-right: 30px;
+
     margin-top: 10px;
 	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
@@ -545,7 +533,7 @@ font-weight: bold;
     justify-content: space-between;
     align-items: center;
     height: 300px;
-    margin-top:100px;
+    margin-top:30px;
     background: #F2F2F2;
 }
 .blocfoot1
@@ -571,4 +559,26 @@ font-weight: bold;
 {
     color: black;
     text-decoration: none;
+}
+/*responsive*/
+@media screen and (max-width: 1300px)
+{
+    .sizehebergeacti
+    {
+    margin-left: 35%;
+    }
+    .detailheberge
+    {
+    min-height: 150px;
+    }
+    .blochebergement
+    {
+        min-height: auto;
+        padding: 20px;
+    }
+    .blocpopulaire
+    {
+        min-height: auto;
+        padding: 20px;
+    }
 }
