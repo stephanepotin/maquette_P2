@@ -248,7 +248,7 @@ font-weight: bold;
     align-items: center;
     margin-top: 10px;
 }
-.Box
+.box
 {
     display: flex;
     flex-direction: column;
@@ -260,6 +260,12 @@ font-weight: bold;
     padding: 1%;
     border-radius: 20px;
 }
+.box:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .imgheberg
 {
     background-size: cover;
@@ -268,7 +274,7 @@ font-weight: bold;
      height: 120px;
      border-radius: 15px 15px 0 0;
 }
-figcaption
+.detailheberge
 {
     width: 90%;
 }
@@ -310,6 +316,12 @@ figcaption
    height: auto;
    padding: 1% 0 1% 1%;
    border-radius: 20px;
+   margin-bottom: 22px;
+}
+.boitepopulaire12:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .boitepopulaire3
 {
@@ -321,6 +333,11 @@ figcaption
     padding: 1% 0 1% 1%;
     border-radius: 20px;
 }
+.boitepopulaire3:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .imgpop
 {
     background-size: cover;
@@ -329,35 +346,52 @@ figcaption
      height: 160px;
      border-radius: 15px 0 0 15px;
 }
+.detailpop
+{
+    width: 60%;
+    padding-left: 5%;
+}
+/*etoiles*/
+.star
+{
+    color: #f2f2f2;
+}
+.colorstar
+{
+    color: #0065FC;
+}
   /*section 3*/
-#Activity 
+#Activites 
 {	
     
-    width: 98%;
-    padding-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#Activity .activités 
+.blocactivites
 {
     margin-top: -10%;
 	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
 	grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
     grid-column-gap: 1em;
-	height: 700px;	
+    height: 700px;
 }
 
-#Activity .Box 
+.boiteact 
 {
 	margin: 9em 0em 2em -1em;
 	max-height: 100%;
 	width: 100%;
-	border-radius: 1em; 
-
-	
+	border-radius: 1em;	
+}
+.boiteact2356
+{
+    width: 23%;
+    height: 100% ;
 }
 
-#Activity .Box:nth-child(1) 
+.boiteact:nth-child(1) 
 {
 	grid-row-start: 1;
 	grid-row-end: 11;
@@ -365,42 +399,8 @@ figcaption
 	grid-column-end: 2;
     box-shadow: #F2F2F2 3px 6px ;
 }
-.imgvieuxport
-{
-    object-fit: cover;
-    width: 100%;
-    height: 85%;
-    border-radius: 0.8em 0.8em 0em 0em;
-}
-.imgpom
-{
-    object-fit: cover;
-    width: 100%;
-    height: 80%;
-    border-radius: 0.8em 0.8em 0em 0em;
-}
-.imgfrioul
-{
-    object-fit: cover;
-    width: 100%;
-    height: 60%;
-    border-radius: 0.8em 0.8em 0em 0em;
-}
-.imggard
-{
-    object-fit: cover;
-    width: 100%;
-    height: 68.5%;
-    border-radius: 0.8em 0.8em 0em 0em;
-}
-.imglong
-{
-    object-fit: cover;
-    width: 100%;
-    height: 78%;
-    border-radius: 0.8em 0.8em 0em 0em;
-}
-#Activity .Box:nth-child(2) 
+
+.boiteact:nth-child(2) 
 {
 	grid-row-start: 1;
 	grid-row-end: 8;
@@ -409,7 +409,7 @@ figcaption
     box-shadow: #F2F2F2 3px 6px ;
 }
 
-#Activity .Box:nth-child(3) 
+.boiteact:nth-child(3) 
 {
 	grid-row-start: 6;
 	grid-row-end: 11;	
@@ -418,7 +418,7 @@ figcaption
     box-shadow: #F2F2F2 3px 6px ;	
 }
 
-#Activity .Box:nth-child(4) 
+.boiteact:nth-child(4) 
 {
 	grid-row-start: 1;
 	grid-row-end: 11;
@@ -427,7 +427,7 @@ figcaption
     box-shadow: #F2F2F2 3px 6px ;
 }
 
-#Activity .Box:nth-child(5) 
+.boiteact:nth-child(5) 
 {
 	grid-row-start: 1;
 	grid-row-end: 7;
@@ -435,7 +435,7 @@ figcaption
 	grid-column-end: 5;	
     box-shadow: #F2F2F2 3px 6px ;
 }
-#Activity .Box:nth-child(6)  
+.boiteact:nth-child(6)  
  {
 	grid-row-start: 5;
 	grid-row-end: 11;
@@ -443,7 +443,23 @@ figcaption
 	grid-column-end: 5;	
     box-shadow: #F2F2F2 3px 6px ;
 }
+.imgact14
+{
+    background-size: cover;
+    background-position: center;
+     width: 100%;
+     height: 530px;
+     border-radius: 15px 15px 0 0px;
+}
+.imgact2356
+{
+    background-size: cover;
+    background-position: center;
+     width: 100%;
+     height: 250px;
+     border-radius: 15px 15px 0 0px;
 
+}
 
 
 
