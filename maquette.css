@@ -3,8 +3,7 @@ body
     font-family: "Raleway", sans-serif;
 
 }
-/*header*/
-
+/*nav*/
 .sizenav
 {
     height: auto;
@@ -23,6 +22,7 @@ body
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 7px;
 }
 .contener
 {
@@ -40,7 +40,15 @@ body
     height: 99px;
     border-top:transparent solid 1px;
 }
-
+.menu-heberge:hover
+{
+    border-top: #0065FC solid 1px;
+    cursor: pointer;
+}
+.menu-heberge:hover >a
+{
+    color: #0065FC;
+}
 .policemenu
 {
     color: black;
@@ -61,7 +69,13 @@ body
     text-decoration: none;
     font-weight: bold;
 }
-/*section 1*/
+.menu-inscript:hover
+{
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bold;   
+}
+/*header*/
 .titreheaderh1
 {
 font-weight: bold;
@@ -82,10 +96,9 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
 }
 .recherche
 {
@@ -106,90 +119,95 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
     background-color: #0065FC;
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
 }
-.bouton p
+.policerechercher:hover
 {
-    font-weight: bolder;
-    font-size: 15px;
+    color: #0065fc;
+    background-color: #f2f2f2;
 }
-.filtres
+/*filtres*/
+.filtre
 {
     display: flex;
-    flex-direction: column;
-    padding: 20px 0;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
-.filtres, 
-.filtres .list 
+/*.titre
+{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}*/
+.list1
 {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-.filtres .titre
-{
-    margin-bottom: 20px;
-    padding-top: inherit;
-    padding-right: 20px;
-}
-.filtres .bouton 
+
+.boutonfiltre
 {
     display: flex;
     justify-content: space-between;
-    border-radius: 200px;
-    border: 2px #F2F2F2 solid;
+    align-items: center;
+    border: 2px solid #f2f2f2;
     height: 50px;
-    position: relative;
-    padding-left: 55px;
-    padding-right: 14px;
+    border-radius: 30px;
     margin-right: 20px;
-    margin-bottom: 10px;
-    transition: transform .2s;
-    cursor: pointer;
 }
-
-
-.filtres .bouton:first-child {
-    margin-left: 0;
-}
-
-.filtres .bouton:last-child {
-    margin-right: 0;
-}
-
-.filtres .bouton i {
-    line-height: 50px;
-    color: #0065FC;
-    position: absolute;
-    width: 50px;
-    text-align: center;
-    background: #DEEBFF;
-    left: -2px;
-    border-radius: 100%;
-}
-.bouton p 
+.boutonfiltre:hover
 {
-    
-    display: flex;
+    color: #0065fc;
 }
-
+.bouton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: -2px;
+    border-radius: 25px;  
+    width: 52px;
+    height: 52px; 
+    color: #0065fc;
+    background-color: #DEEBFF;
+}
+.bouton:hover
+{
+    color: white;
+    background-color: #0065FC;
+}
+.titrefiltre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    font-weight: bold;
+}
 .info
 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-right: 20%;
+    display: flex;
+    align-items: center;
 }
-.info i
+.logement
 {
-    border: 2px solid #F2F2F2;
-    width: 29px;
-    line-height: 25px;
-    font-size: 14px;
-    color: #0065FC;
-    text-align: center;
-    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border:2px solid #f2f2f2;
+    border-radius: 25px;
     margin-right: 5px;
-    height: 29px;
 }
-
 /*section 2*/
 #hotel
 {
