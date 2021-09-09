@@ -366,32 +366,19 @@ font-weight: bold;
     
     margin-top: 50px;
     margin-bottom: 50px;
+
 }
 
 .blocactivites
 {
-    margin-top: -10%;
+    margin-top: 10px;
 	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
 	grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
     grid-column-gap: 1em;
-    height: 700px;
+    height: 600px;
 }
-
-.boiteact 
-{
-	margin: 9em 0em 2em -1em;
-	max-height: 100%;
-	width: 100%;
-	border-radius: 1em;	
-}
-.boiteact2356
-{
-    width: 23%;
-    height: 100% ;
-}
-
-.boiteact:nth-child(1) 
+.boiteact14:nth-child(1) 
 {
 	grid-row-start: 1;
 	grid-row-end: 11;
@@ -399,26 +386,26 @@ font-weight: bold;
 	grid-column-end: 2;
     box-shadow: #F2F2F2 3px 6px ;
 }
-
-.boiteact:nth-child(2) 
+.boiteact2356:nth-child(2) 
 {
+    margin-bottom: 20px;
 	grid-row-start: 1;
-	grid-row-end: 8;
+	grid-row-end: 6;
 	grid-column-start: 2;
 	grid-column-end: 3;
     box-shadow: #F2F2F2 3px 6px ;
 }
-
-.boiteact:nth-child(3) 
+.boiteact2356:nth-child(3) 
 {
+    margin-top: 20px;
 	grid-row-start: 6;
 	grid-row-end: 11;	
     grid-column-start: 2;
 	grid-column-end: 3;
-    box-shadow: #F2F2F2 3px 6px ;	
+    box-shadow: #F2F2F2 3px 6px ;
+	
 }
-
-.boiteact:nth-child(4) 
+.boiteact14:nth-child(4) 
 {
 	grid-row-start: 1;
 	grid-row-end: 11;
@@ -426,38 +413,57 @@ font-weight: bold;
 	grid-column-end: 4;
     box-shadow: #F2F2F2 3px 6px ;
 }
-
-.boiteact:nth-child(5) 
+.boiteact2356:nth-child(5) 
 {
+    margin-bottom: 20px;
 	grid-row-start: 1;
-	grid-row-end: 7;
+	grid-row-end: 6;
 	grid-column-start: 4;
 	grid-column-end: 5;	
     box-shadow: #F2F2F2 3px 6px ;
 }
-.boiteact:nth-child(6)  
+.boiteact2356:nth-child(6)  
  {
-	grid-row-start: 5;
+    margin-top: 20px;
+	grid-row-start: 6;
 	grid-row-end: 11;
 	grid-column-start: 4;
 	grid-column-end: 5;	
     box-shadow: #F2F2F2 3px 6px ;
 }
+.boiteact14
+{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.boiteact2356
+{
+    width: 100%;
+    border-radius: 15px;
+
+}
 .imgact14
 {
     background-size: cover;
     background-position: center;
-     width: 100%;
-     height: 530px;
-     border-radius: 15px 15px 0 0px;
+    width: 100%;
+    height: 490px;
+    border-radius: 15px 15px 0 0px;
 }
+
 .imgact2356
 {
     background-size: cover;
     background-position: center;
      width: 100%;
-     height: 250px;
-     border-radius: 15px 15px 0 0px;
+    height: 200px;
+     border-radius: 15px 15px 0 0px;  
+}
+.titreactivite
+{
+    height: 70px;
+    padding-left: 5%;
 
 }
 
