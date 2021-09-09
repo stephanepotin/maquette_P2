@@ -4,6 +4,10 @@ body
 
 }
 /*nav*/
+nav
+{
+margin: 20px;
+}
 .sizenav
 {
     height: auto;
@@ -73,9 +77,15 @@ body
 {
     color: #0065FC;
     text-decoration: none;
-    font-weight: bold;   
+    font-weight: bold;
+    border-top: #0065FC solid 1px;
+    cursor: pointer;   
 }
 /*header*/
+#header
+{
+    margin: 20px;
+}
 .titreheaderh1
 {
 font-weight: bold;
@@ -169,12 +179,15 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: -2px;
     border-radius: 25px;  
     width: 52px;
     height: 52px; 
     color: #0065fc;
     background-color: #DEEBFF;
+}
+.fa-lg
+{
+    display: flex;
 }
 .bouton:hover
 {
@@ -218,6 +231,7 @@ font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
 }
 .blochebergement
 {
@@ -367,10 +381,13 @@ font-weight: bold;
     margin-top: 50px;
     margin-bottom: 50px;
 
+
 }
 
 .blocactivites
 {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
 	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
