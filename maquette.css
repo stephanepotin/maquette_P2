@@ -244,15 +244,8 @@ font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 10px;
-}
-.bloc2
-{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
 }
 .box
 {
@@ -265,13 +258,17 @@ font-weight: bold;
     background-color: white;
     padding: 1%;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .box:hover
 {
     cursor: pointer;
     transform: scale(1.05);
 }
-
+img
+{
+    object-fit: cover;
+}
 .imgheberg
 {
     background-size: cover;
@@ -527,7 +524,7 @@ font-weight: bold;
 }
 /*footer*/
 
-.footer 
+#footer 
 {
     display: flex;
     justify-content: space-between;
@@ -561,27 +558,7 @@ font-weight: bold;
     text-decoration: none;
 }
 /*responsive*/
-@media screen and (max-width: 1300px)
-{
-    .sizehebergeacti
-    {
-    margin-left: 35%;
-    }
-    .detailheberge
-    {
-    min-height: 150px;
-    }
-    .blochebergement
-    {
-        min-height: auto;
-        padding: 20px;
-    }
-    .blocpopulaire
-    {
-        min-height: auto;
-        padding: 20px;
-    }
-}
+
 @media screen and (max-width: 767px) {
 
     #hebergements
@@ -589,13 +566,14 @@ font-weight: bold;
         flex-direction:column-reverse;
     }
 
-    .bloc1 , .bloc2 , footer 
+    .bloc1 , .bloc2  
     {
         flex-direction: column;
     }
 
     .box{
        width: 100%;
+       margin: 1%;
     }
 
     .blocactivites{
@@ -630,9 +608,19 @@ font-weight: bold;
 
     .blochebergement    {
        
-        width:90%
+        width:90%;
+        background:none;
         
     }
+    .blochebergement h2
+    {
+        
+    }
+    #footer
+    {
+        flex-direction: column;
+    }
+
 
 
 
