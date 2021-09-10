@@ -582,3 +582,58 @@ font-weight: bold;
         padding: 20px;
     }
 }
+@media screen and (max-width: 767px) {
+
+    #hebergements
+    {
+        flex-direction:column-reverse;
+    }
+
+    .bloc1 , .bloc2 , footer 
+    {
+        flex-direction: column;
+    }
+
+    .box{
+       width: 100%;
+    }
+
+    .blocactivites{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .blocactivites img{
+        height:150px;
+       
+    }
+
+    .barrerecherche {
+        width: 330px; 
+    }
+
+    .policerechercher{
+        width: 50px;
+    }
+
+    .policerechercher i
+    {
+        display:block;
+    }
+
+    .policerechercher span
+    {
+        display:none;
+    }
+
+    .blochebergement    {
+       
+        width:90%
+        
+    }
+
+
+
+}
