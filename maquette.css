@@ -125,11 +125,7 @@ font-weight: bold;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
-.policerechercher:hover
-{
-    color: #0065fc;
-    background-color: #f2f2f2;
-}
+
 /*filtres*/
 .filtre
 {
