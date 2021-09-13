@@ -557,7 +557,14 @@ img
 }
 /*responsive*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
+    
+    .filtre
+    {
+        display: flex;
+       justify-content: center;
+        flex-direction: column;
+    }
 
     #hebergements
     {
@@ -579,6 +586,11 @@ img
         flex-direction: column;
         height: auto;
 
+    }
+    .blocpopulaire
+    {
+        height: auto;
+        border-radius: none;
     }
 
     .blocactivites img{
@@ -618,8 +630,9 @@ img
     {
         flex-direction: column;
     }
-
-
-
-
+}
+@media screen and (min-width: 500px)
+{
+    .filtre
+    display: flex: ;;
 }
