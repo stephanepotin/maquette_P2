@@ -17,8 +17,8 @@ body
 }
 .logo
 {
-
-
+    height: 50px;
+    width: auto;
     margin-bottom: 7px;
 }
 .contener
@@ -599,21 +599,8 @@ img
     }
 
     .barrerecherche {
-        width: 330px; 
-    }
-
-    .policerechercher{
-        width: 50px;
-    }
-
-    .policerechercher i
-    {
-        display:block;
-    }
-
-    .policerechercher span
-    {
-        display:none;
+        width: 400px;
+        
     }
 
     .blochebergement    {
@@ -621,6 +608,10 @@ img
         width:90%;
         background:none;
         
+    }
+    .policerechercher
+    {
+
     }
     .blochebergement h2
     {
@@ -631,8 +622,4 @@ img
         flex-direction: column;
     }
 }
-@media screen and (min-width: 500px)
-{
-    .filtre
-    display: flex: ;;
-}
+
