@@ -142,12 +142,18 @@ button
     margin-bottom: 40px;
 }*/
 .list1
-{
+{   
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
+.list2
+{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .boutonfiltre
 {
     display: flex;
@@ -561,17 +567,25 @@ img
     
     .filtre
     {
+
         display: flex;
-       justify-content: center;
+       justify-content: start;
         flex-direction: column;
     }
-
+    .list1
+    {
+        display: flex;
+    }
+    .list2
+    {
+        flex-direction: column;
+    }
     #hebergements
     {
         flex-direction:column-reverse;
     }
 
-    .bloc1 , .bloc2  
+    .bloc1  
     {
         flex-direction: column;
     }
@@ -587,10 +601,18 @@ img
         height: auto;
 
     }
+    .boiteact14, .boiteact56, .boiteact3
+    {
+        margin-bottom: 20px;
+    }
+    .boiteact2
+    {
+        margin-bottom: 10px;
+    }
     .blocpopulaire
     {
         height: auto;
-        border-radius: none;
+        border-radius: 0;
     }
 
     .blocactivites img{
@@ -619,6 +641,7 @@ img
     }
     #footer
     {
+        height: auto;
         flex-direction: column;
     }
 }
