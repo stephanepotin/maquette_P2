@@ -1,6 +1,7 @@
 body
 {
     font-family: "Raleway", sans-serif;
+    margin: auto;
 
 }
 /*nav*/
@@ -74,7 +75,10 @@ nav
     cursor: pointer;   
 }
 /*header*/
-
+header 
+{
+    margin: ;
+}
 .titreheaderh1
 {
 font-weight: bold;
@@ -132,9 +136,9 @@ button
 
 
 /*filtres*/
-.filtre
+#filtre
 {
-    display: flex;
+
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -150,12 +154,9 @@ button
     justify-content: space-around;
     align-items: center;
 }
-.list2
+#filtre h3
 {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-right: 20px;
 }
 .boutonfiltre
 {
@@ -173,7 +174,7 @@ button
 }
 .bouton
 {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     border-radius: 25px;  
@@ -225,7 +226,7 @@ button
     justify-content: space-around;
     align-items: center;
 
-    margin-bottom: 50px;
+    margin: 50px 2% ;
     
 }
 .blochebergement
@@ -376,13 +377,11 @@ img
     color: #0065FC;
 }
   /*section 3*/
-#Activites 
-{	
-    
-    margin-top: 50px;
-    margin-bottom: 50px;
+#activites
+{
+    margin: 50px 2% ;
 }
-#Activités h2
+#activitas h2
 {
     margin-left: 30px;
 }
@@ -431,7 +430,7 @@ img
 	grid-column-end: 4;
     box-shadow: #F2F2F2 3px 6px ;
 }
-.boiteact2356:nth-child(5) 
+.boiteact56:nth-child(5) 
 {
     margin-bottom: 20px;
 	grid-row-start: 1;
@@ -440,7 +439,7 @@ img
 	grid-column-end: 5;	
     box-shadow: #F2F2F2 3px 6px ;
 }
-.boiteact2356:nth-child(6)  
+.boiteact56:nth-child(6)  
  {
     margin-top: 20px;
 	grid-row-start: 6;
@@ -480,7 +479,7 @@ img
     cursor: pointer;
     transform: scale(1.03);
 }
-.boiteact2356
+.boiteact56
 {
     width: 100%;
     border-radius: 15px;
@@ -531,7 +530,7 @@ img
 }
 /*footer*/
 
-#footer 
+footer 
 {
     display: flex;
     justify-content: space-between;
@@ -621,17 +620,16 @@ img
         height: auto;
 
     }
-    .boiteact14, .boiteact56, .boiteact3
-    {
-        margin-bottom: 20px;
-    }
-    .boiteact2
+    .boiteact14, .boiteact56, .boiteact3, .boiteact2
     {
         margin-bottom: 10px;
+        margin-top: 20px;
     }
+  
     .blocpopulaire
     {
         height: auto;
+        padding-bottom: 10px;
         border-radius: 0;
     }
 
@@ -652,9 +650,8 @@ img
         
     }
 
-    #footer
+    footer
     {
-        height: auto;
         flex-direction: column;
     }
 }
