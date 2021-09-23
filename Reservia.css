@@ -500,13 +500,25 @@ img
 footer 
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top:30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
+    padding: 30px 3%;
     background: #F2F2F2;
 }
+.blocfoot1
+{
+
+    margin-left: -1%;
+}
+.blocfoot2
+{
+    margin: 0 250px;
+}
+.blocfoot3
+{
+  margin:0 40px ;
+    
+} 
 .lienfoot
 {
     height: 30px;
