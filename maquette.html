@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="maquette.css" />
@@ -10,33 +10,30 @@
     </head>
     <body>   
         <!-- header -->
-            <nav class="sizenav" >
-                <div class="menunav">
-                    <div>
-                        <img
-                            class="logo"
-                            src="./images/logo/Reservia@3x.png"
-                            alt="logo"
-                        />
-                    </div>
-                    <div class="contener ">
+            <nav>
+                <div id="menunav">
+                    <img
+                        id="logo"
+                        src="./images/logo/Reservia@3x.png"
+                        alt="logo"
+                    />
+                    <div id="contener ">
                         <div class="menu-heberge">
-                            <a class="policemenu" 
+                            <a class="policemenu"
                                 href="#hebergements">Hebergements</a>
                         </div>
-                        <div class="menu-heberge">
-                            <a class="policemenu" 
-                                    href="#activités">Activités</a>
-                        </div>
-                    </div>    
-                    <div class="menu-inscript">
+                        <div class="menu-heberge"> 
+                        <a class="policemenu" 
+                            href="#activités">Activités</a>
+                    </div>
+                </div>    
+                    <div id="login">
                         <a class="policemenuinscript"  
                             href="#">S'inscrire</a>
                     </div>
                 </div>
             </nav>
             <header>
-                <section id="header">
                     <div>
                         <h1 class="titreheaderh1">
                             Trouver un hébergement pour des vancances de rêves
@@ -55,11 +52,12 @@
                             />
                         </div>
                         <div class="policerechercher">
-                            <button name="#">rechercher<i class="fas fa-search"></i></button>
+                            <button id="search"class="elementsearch">rechercher</button>
+                            <button id="iconsearch" class="fas fa-search"></i></button>
                         </div>
                     </div> 
                     <div class="filtre">
-                        <div class="titre"><h3>Filtres</h3></div>
+                        <h3>Filtres</h3>
                         <div class="list1">
                             <div class="boutonfiltre">
                                 <i class="fas fa-money-bill-wave fa-lg bouton"></i>
@@ -69,8 +67,6 @@
                                 <i class="fas fa-child fa-lg bouton"></i>
                                 <div class="titrefiltre">Familial</div>
                             </div>
-                        </div>
-                        <div class="list2">
                             <div class="boutonfiltre">
                                 <i class="fas fa-heart fa-lg bouton"></i>
                                 <div class="titrefiltre">Romantique</div>
@@ -87,7 +83,6 @@
                         </div>
                         <p>Plus de 500 logements disponible dans cette ville</p>
                     </div>
-                </section>
             </header>
         <!--HEBERGEMENTS-->
             <section id="hebergements">              

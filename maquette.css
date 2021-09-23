@@ -4,34 +4,33 @@ body
 
 }
 /*nav*/
-.sizenav
+nav
 {
     height: auto;
 }
-.menunav
+#menunav
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-.logo
+#logo
 {
     height: 50px;
     width: auto;
     margin-bottom: 7px;
 }
-.contener
+#contener
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left:60%;
+    justify-content: space-between;
+
 }
 .menu-heberge
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 140px;
     height: 99px;
@@ -51,7 +50,7 @@ body
     color: black;
     text-decoration: none;
 }
-.menu-inscript
+#login
 {
     display: flex;
     justify-content: center;
@@ -125,6 +124,10 @@ button
     cursor: pointer;
     border: none;
     border-radius: 0 10px 10px 0;
+}
+#iconsearch
+{
+    display: none;
 }
 
 
@@ -563,7 +566,24 @@ img
 }
 /*responsive*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
+    button
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    }
+    #search
+    {
+        display: none;
+    }
     
     .filtre
     {
@@ -631,14 +651,7 @@ img
         background:none;
         
     }
-    .policerechercher
-    {
 
-    }
-    .blochebergement h2
-    {
-        
-    }
     #footer
     {
         height: auto;
