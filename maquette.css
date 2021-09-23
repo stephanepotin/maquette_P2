@@ -77,8 +77,7 @@ nav
 /*header*/
 header 
 {
-    margin: ;
-}
+    margin: ;}
 .titreheaderh1
 {
 font-weight: bold;
@@ -138,7 +137,7 @@ button
 /*filtres*/
 #filtre
 {
-
+    display: flex;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -565,7 +564,7 @@ footer
 }
 /*responsive*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     button
     {
     display: flex;
@@ -573,30 +572,25 @@ footer
     align-items: center;
     background-color: #0065FC;
     height: 50px;
-    width: 120px;
+    width: 50px;
     color: white;
     cursor: pointer;
     border: none;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px
     }
     #search
     {
         display: none;
     }
+    #iconsearch
+    {
+        display: inline;
+    }
     
-    .filtre
+    #filtre
     {
 
-        display: flex;
        justify-content: start;
-        flex-direction: column;
-    }
-    .list1
-    {
-        display: flex;
-    }
-    .list2
-    {
         flex-direction: column;
     }
     #hebergements
@@ -639,7 +633,8 @@ footer
     }
 
     .barrerecherche {
-        width: 400px;
+        width: 330px;
+        border: none;
         
     }
 
