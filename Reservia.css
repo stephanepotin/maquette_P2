@@ -7,25 +7,33 @@ body
 /*nav*/
 nav
 {
-    margin: auto;
+    margin: 1% 2%;
 }
 #menunav
 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
     width: 100%;
 }
 #logo
 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+
     height: 50px;
     width: auto;
     margin-bottom: 7px;
 }
 #contener
 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 7;
+    grid-column-end: 9;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .menu-heberge
@@ -53,6 +61,11 @@ nav
 }
 #login
 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 9;
+    grid-column-end: 10;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,24 +151,17 @@ button
 #filtre
 {
     display: flex;
-    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-/*.titre
+}#filtre h3
 {
-    margin-top: 50px;
-    margin-bottom: 40px;
-}*/
-.list1
+    margin-right: 20px;
+}
+.list
 {   
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-#filtre h3
-{
-    margin-right: 20px;
 }
 .boutonfiltre
 {
@@ -197,6 +203,8 @@ button
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
     font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 .info
 {
@@ -228,7 +236,7 @@ button
     margin: 50px 2% ;
     
 }
-.blochebergement
+#blochebergement
 {
     display: flex;
     flex-direction: column;
@@ -245,7 +253,7 @@ button
 {
     margin-left: 10px;
 }
-.bloc1
+#bloc
 {
     
     display: flex;
