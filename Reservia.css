@@ -7,7 +7,7 @@ body
 /*nav*/
 nav
 {
-    height: auto;
+    margin: auto;
 }
 #menunav
 {
@@ -77,7 +77,7 @@ nav
 /*header*/
 header 
 {
-    margin: ;}
+    margin: 1% 2%;}
 .titreheaderh1
 {
 font-weight: bold;
