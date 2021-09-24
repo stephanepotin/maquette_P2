@@ -152,7 +152,7 @@ button
 {
     margin-right: 20px;
 }
-.list
+#list
 {   
     display: flex;
     justify-content: space-around;
@@ -505,16 +505,16 @@ footer
     padding: 30px 3%;
     background: #F2F2F2;
 }
-.blocfoot1
+#blocfoot1
 {
 
     margin-left: -1%;
 }
-.blocfoot2
+#blocfoot2
 {
     margin: 0 250px;
 }
-.blocfoot3
+#blocfoot3
 {
   margin:0 40px ;
     
@@ -531,7 +531,49 @@ footer
 }
 /*responsive*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) 
+{
+    #menunav
+    {
+        grid-template-columns: 25% 25% 25% 25%;
+        width: 100%;
+    }
+    #logo
+    {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #contener 
+    {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        font-size: 1.3em;
+
+        border-bottom: solid 0.1em #f2f2f2;
+        justify-content: space-around;
+        width: 100%;
+        margin-left: -1em;
+    }
+    #login
+    {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 8;
+        font-size: 1.3em;
+        padding-right: 1em;
+    }
+    .menu-heberge:hover
+    {
+    border-top: transparent;
+    border-bottom: #0065FC solid 0.1em;
+    width: 50%;
+
+    }
     button
     {
     display: flex;
@@ -560,12 +602,18 @@ footer
        justify-content: start;
         flex-direction: column;
     }
+    #list
+    {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
     #hebergements
     {
         flex-direction:column-reverse;
+        margin: 0;
     }
 
-    .bloc1  
+    #bloc  
     {
         flex-direction: column;
     }
@@ -573,48 +621,50 @@ footer
     .box{
        width: 100%;
        margin: 1%;
+       box-shadow: #F2F2F2 3px 6px ;
     }
 
-    .blocactivites{
+    #blocactivites{
         display:flex;
         flex-direction: column;
         height: auto;
-
     }
-    .boiteact14, .boiteact56, .boiteact3, .boiteact2
+     #blocactivites img
     {
-        margin-bottom: 10px;
-        margin-top: 20px;
+        height:120px; 
     }
-  
-    .blocpopulaire
+    .boiteact14, .boiteact56, #boiteact3, #boiteact2
+    {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: none;
+    }
+    #blocpopulaire
     {
         height: auto;
-        padding-bottom: 10px;
+        padding: 35px 15px;
         border-radius: 0;
+        margin-left: 0;
     }
-
-    .blocactivites img{
-        height:150px;
-       
-    }
-
-    .barrerecherche {
+    .barrerecherche 
+    {
         width: 330px;
-        border: none;
-        
+  
     }
-
-    .blochebergement    {
+    #blochebergement    
+    {
        
         width:90%;
-        background:none;
-        
+        background:none;     
     }
-
     footer
     {
         flex-direction: column;
     }
+    #blocfoot2, #blocfoot3
+    {
+        margin: 0;
+    }
+
 }
 
